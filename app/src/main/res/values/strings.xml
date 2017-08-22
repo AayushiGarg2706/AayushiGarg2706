@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">MyTalent</string>
+    <!--  <string name="action_settings"></string>-->
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <style name="Theme.Default" parent="@android:style/Theme.Holo"></style>
+
+    <style name="Theme.NoTitle" parent="@android:style/Theme.Holo.NoActionBar"></style>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="spinner_title">Select Category</string>
+    <string name="language">English</string>
+    <!-- Login-->
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Sign_in">Sign in</string>
+    <string name="Forgot_Password">Forgot Password?</string>
+    <string name="No_Account">DONOT HAVE AN ACCOUNT?</string>
+    <string name="registernow">Register Now</string>
+    <!-- Register-->
+    <string name="Email">Email</string>
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Mobile">Mobile Number</string>
+    <string name="btn_register">Register</string>
+    <string name="already_account">Already Have Account?</string>
+    <string name="txt_signin">Sign in now!</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="emailalreadyexist">Email already exist.</string>
+    <!--Addvoucher-->
+    <string name="addvouchertxt">Please enter your voucher code</string>
+    <string name="txt_enter_vouchercode">Enter your voucher code</string>
+    <string name="btnsubmit">SUBMIT</string>
+    <string name="alreadyused">Already Used</string>
+    <!--Emailvalidation-->
+    <string name="alert">Please enter mail..</string>
+    <string name="txt_emailvalid1">Please enter your registered email address</string>
+    <string name="txt_emailvalid3">We will send password link to your email address </string>
+    <string name="ed_email">Email Address</string>
+    <string name="btn_send">Send</string>
+    <string name="txt_send">Send</string>
+    <!--exam1-->
+    <string name="btn_login">Login</string>
+    <string name="btn_gotootp">OtpScreen</string>
+<string name="btngetStarted">Get Started</string>
+
+    <string name="txt_exam">You have to login first then only         you can move to exam.. </string>
+
+    <style name="Theme.FullScreen" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen"></style>
+
+    <!--otpscreen-->
+    <string name="ed_otp">Enter OTP</string>
+    <string name="btn_verify">Verify</string>
+    <string name="txt_notgetting">NOT GETTING YET?</string>
+    <string name="txt_resend">Resend OTP</string>
+    <string name="txt_otpscreen">Please enter OTP sent to your registered mobile number</string>
+    <string name="btnnewregister">New Registration</string>
+    <!--profile-->
+    <string name="btn_logout">Logout</string>
+    <!--question-->
+    <string name="txt_MyMajor_">My Major</string>
+    <string name="txt_ques_screen1">Which major suits my personality?</string>
+    <string name="txt_ques_screen2">We help you on the right...</string>
+    <string name="txt_ans1">Strong Yes</string>
+    <string name="txt_ans2">Yes</string>
+    <string name="txt_ans3">Neutral</string>
+    <string name="txt_ans4">No</string>
+    <string name="txt_ans5">Strong No</string>
+    <!--choose language-->
+    <string name="btn_choose_eng">English</string>
+    <string name="btn_choose_arabia">Arabia</string>
+    <!--Questionscreen-->
+    <string name="btn_take_exam">Take Exam</string>
+    <string name="btn_buy">Buy</string>
+    <string name="btn_voucher">Voucher</string>
+    <string name="btn_report">Report</string>
+    <string name="txt_My_MAjor"> My Major</string>
+    <string name="txt_Career">Career Change</string>
+    <string name="txt_WhoMI">Who AM I?</string>
+    <string name="txt_My_Mate">My Mate</string>
+    <string name="txt_VNo">V.No:</string>
+    <string name="txt_examscreen"> Examination Center</string>
+    <!--alerts-->
+    <string name="ALert_login_submit">Username and Password  are required</string>
+    <string name="al_no_internet">No active internet connection found.Please try again.</string>
+    <string name="al_invalid_login">Invalid Username or Password</string>
+    <string name="error">Error</string>
+    <!--<string name="al_vouchercode">Voucher code is required</string>-->
+    <string name="al_please_wait">Please wait</string>
+    <string name="al_WMIreport">You cannot access it</string>
+    <string name="al_ask_submit">Do you want to submit the test</string>
+    <string name="al_ask_submit_before">You have not attempted all questions, Do you want to submit the test</string>
+    <string name="al_alert_btnregister">All fields  are mandatory</string>
+    <string name="know">Know</string>
+    <string name="exam">Exam</string>
+    <string name="profile">Profile</string>
+
+
+</resources>

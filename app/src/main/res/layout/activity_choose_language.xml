@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#EFEFEF"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="left"
+    tools:context="com.logischtech.mytalentapp.Choose_language">
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/btn_choose_eng"
+        android:paddingTop="20dp"
+        android:stateListAnimator="@null"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"
+        android:background="#E7E7E7"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentStart="true"
+        android:textColor="#EE6940"
+        android:textSize="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/btneng" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="جزيره العرب"
+        android:stateListAnimator="@null"
+        android:layout_height="wrap_content"
+        android:background="#E7E7E7"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+         android:layout_marginEnd="12dp"
+        android:textColor="#EE6940"
+        android:layout_marginTop="7dp"
+        android:textSize="23dp"
+        android:id="@+id/btnothr"
+        android:layout_below="@+id/btneng"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btneng" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/landingimg"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnothr"
+        android:id="@+id/landing"
+        android:paddingRight="-10dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/blogo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fragment__c3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:background="#EFEFEF"
+    android:clickable="true"
+    android:paddingRight="0dp"
+    android:gravity="left"
+    android:paddingTop="0dp"
+    tools:context="com.logischtech.mytalentapp.Otpscreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/slogo"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="130dp"
+        android:src="@drawable/otpscreenimg"
+        android:layout_marginLeft="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/txt_otpscreen"
+        android:layout_marginTop="220dp"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:textColor="#606776"
+
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/mobile"
+        android:src="@drawable/mobile"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="280dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/Mobile"
+        android:id="@+id/etmoblie"
+
+        android:textSize="18dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="85dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/iconotp"
+        android:src="@drawable/password"
+android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="330dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/ed_otp"
+        android:textSize="18dp"
+        android:id="@+id/etetotp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="88dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/signupbtn"
+        android:text="@string/btn_verify"
+        android:textSize="20dp"
+        android:layout_marginTop="380dp"
+        android:clickable="true"
+        android:layout_marginLeft="35dp"
+        android:stateListAnimator="@null"
+        android:textColor="#EE6940"
+        android:layout_marginRight="30dp"
+        android:id="@+id/btnverify"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/txt_notgetting"
+        android:id="@+id/alreadylink"
+        android:textStyle="bold"
+        android:textColorHighlight="#EE6940"
+        android:textColor="#808080"
+        android:layout_marginTop="460dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:id="@+id/tvresendotp"
+        android:layout_marginTop="480dp"
+        android:text="@string/txt_resend"
+        android:gravity="center"
+        android:textColor="#EE6940"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/email"
+        android:visibility="gone"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_childLayoutc2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:clickable="true"
+    android:gravity="left"
+
+    android:background="#EFEFEF"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+
+    android:paddingTop="0dp"
+    tools:context="com.logischtech.mytalentapp.Register">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/slogo"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/userfont"
+android:layout_gravity="left"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:id="@+id/textView"
+        android:layout_marginLeft="33dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:hint="Gender"
+        android:textSize="18dp"
+        android:ellipsize="start"
+        android:layoutDirection="ltr"
+android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:prompt="@string/spinner_title"
+        android:id="@+id/spusername"
+        />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/email"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="left"
+
+        android:id="@+id/email"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/loginimg" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="85dp"
+        android:hint="@string/Email"
+        android:inputType="textShortMessage|textEmailAddress"
+
+        android:ellipsize="start"
+
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/firsrnameicon"
+        android:src="@drawable/firstname"
+        android:layout_gravity="left"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="165dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/First_Name"
+        android:id="@+id/firstname"
+        android:inputType="textShortMessage|textPersonName"
+        android:maxLength="20"
+
+        android:ellipsize="start"
+        android:gravity="left"
+        android:layout_marginRight="35dp"
+        android:textSize="18dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="85dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/secondnameicon"
+        android:layout_gravity="left"
+        android:src="@drawable/lastname"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="205dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etlastname"
+        android:hint="@string/Last_Name"
+        android:inputType="textShortMessage|text"
+
+android:maxLength="20"
+
+        android:ellipsize="start"
+        android:gravity="left"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="195dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/mobile"
+        android:src="@drawable/mobile"
+        android:layout_gravity="left"
+        android:layout_marginLeft="38dp"
+
+        android:layout_marginTop="250dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/Mobile"
+        android:id="@+id/moblie"
+        android:inputType="number"
+        android:maxLength="10"
+        android:digits="0123456789"
+        android:gravity="left"
+        android:ellipsize="start"
+        android:textSize="18dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="85dp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/signupbtn"
+        android:text="@string/btn_register"
+        android:stateListAnimator="@null"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="#EE6940"
+        android:id="@+id/btnregister"
+        android:clickable="true"
+        android:layout_marginRight="35dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/already_account"
+        android:textStyle="bold"
+        android:id="@+id/alreadylink"
+        android:textColorHighlight="#EE6940"
+
+        android:textColor="#808080"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/signinlink"
+        android:layout_marginTop="430dp"
+        android:text="@string/txt_signin"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="#EE6940"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>

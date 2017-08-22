@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- When selected, -->
+    <item android:drawable="@drawable/iconprofileactive"
+        android:state_selected="true"
+        android:state_pressed="false" />
+
+    <!-- When not selected, -->
+    <item android:drawable="@drawable/iconprofile"
+        />
+    <!-- When selected, -->
+    <item android:drawable="@drawable/iconexamactive"
+        android:state_selected="true"
+        android:state_pressed="false" />
+    <!-- When not selected, -->
+    <item android:drawable="@drawable/iconexam"
+        />
+    <!-- When selected,  -->
+    <item android:drawable="@drawable/iconknow"
+        android:state_selected="true"
+        android:state_pressed="false" />
+    <!-- When not selected,-->
+    <item android:drawable="@drawable/iconknow"
+        />
+
+
+
+</selector>

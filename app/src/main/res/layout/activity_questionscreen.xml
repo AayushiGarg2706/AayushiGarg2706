@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+    <variable name="question" type="com.logischtech.mytalentapp.Models.Question"></variable>
+</data>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_questionary"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="left"
+    android:focusableInTouchMode="true"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context="com.logischtech.mytalentapp.Questionary">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/slogo"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EFEFEF"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/voucherid"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EFEFEF"
+        android:id="@+id/traits"
+        android:text="@string/txt_MyMajor_"
+        android:textColor="#EE6940"
+        android:layout_marginTop="60dp"
+        android:gravity="center|top"
+        android:textSize="25dp"
+        android:layout_height="100dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/counterdown"
+        android:text="Textview"
+        android:gravity="left"
+        android:ellipsize="start"
+
+        android:textColor="#EE6940"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/numques"
+        android:text="@{question.QuestionaryID}"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="20dp"
+        android:src="@drawable/left"
+        android:layout_gravity="left"
+        android:layout_marginTop="200dp"
+        android:clickable="false"
+        android:id="@+id/left"
+        android:layout_marginLeft="140dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="20dp"
+        android:src="@drawable/right"
+        android:clickable="true"
+        android:layout_gravity="left"
+        android:layout_marginTop="200dp"
+        android:id="@+id/move"
+        android:layout_marginLeft="200dp"
+        android:layout_height="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/btnsubmit"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/submit"
+        android:background="@drawable/buttoncorner"
+        android:textColor="#ffffff"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginTop="250dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="0"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/questions"
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:layoutDirection="ltr"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+           android:gravity="left"
+        android:layout_gravity="left"
+        android:id="@+id/radio2"
+        android:layout_marginTop="330dp"
+        android:layout_alignParentTop="true"
+        android:text="@string/txt_ans1"
+         />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="left"
+            android:id="@+id/radio3"
+            android:layout_marginTop="2dp"
+            android:text="@string/txt_ans2"
+
+            />
+
+        <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="left"
+            android:id="@+id/radio1"
+        android:layout_marginTop="2dp"
+        android:text="@string/txt_ans3"
+        />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="left"
+            android:id="@+id/radio4"
+            android:layout_marginTop="2dp"
+            android:text="@string/txt_ans4"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="left"
+            android:id="@+id/radio5"
+            android:layout_marginTop="2dp"
+            android:text="@string/txt_ans5"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:text="@{question.Question}"
+        android:textSize="16dp"
+        android:id="@+id/question"
+        android:layout_marginTop="280dp"
+
+
+        android:textColor="#444A64"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+
+        android:text="@{question.Question}"
+        android:textSize="16dp"
+
+        android:id="@+id/question2"
+        android:layout_marginTop="280dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#444A64"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
+</layout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:gravity="left"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context="com.logischtech.mytalentapp.Profile">
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/slogo"
+        android:background="#ffffff"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/firsrnameicon"
+        android:src="@drawable/firstname"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="165dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/Name"
+        android:layout_marginRight="35dp"
+        android:gravity="left"
+        android:textSize="18dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="85dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/email"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_marginTop="120dp"
+        android:id="@+id/email"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/loginimg" />
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="85dp"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/mobile"
+        android:src="@drawable/mobile"
+        android:layout_gravity="left"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="205dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/moblie"
+        android:textSize="18dp"
+        android:gravity="left"
+
+        android:layout_marginTop="195dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="85dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:id="@+id/logout"
+        android:text="@string/btn_logout"
+        android:textSize="20dp"
+        android:stateListAnimator="@null"
+
+        android:textColor="#ffffff"
+        android:background="@drawable/buttoncorner"
+        android:layout_height="wrap_content" />
+
+
+
+</FrameLayout>

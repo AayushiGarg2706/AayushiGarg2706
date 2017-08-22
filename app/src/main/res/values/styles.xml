@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">#D9D9D9</item>
+        <item name="colorPrimaryDark">#EE6940</item>
+        <item name="colorAccent">#EE6940</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="CustomTabPageIndicator" parent="AppTheme.AppBarOverlay">
+        <item name="android:textColor">#EE6940</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">-10dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+</style>
+
+    <style name="AppTheme.TabStyle" parent="Widget.Design.TabLayout">
+
+        <item name="tabTextColor">#000000</item>
+        <item name="tabSelectedTextColor">#EE6940</item>
+        <item name="tabIndicatorColor">#EE6940</item>
+
+
+    </style>
+    <style name="AppTheme.AppBarLayout" parent="Widget.Design.AppBarLayout">
+
+
+    </style>
+
+</resources>

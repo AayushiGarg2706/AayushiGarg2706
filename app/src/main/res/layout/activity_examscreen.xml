@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="voucher" type="com.logischtech.mytalentapp.Models.ExamResult"></variable>
+    </data>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.logischtech.mytalentapp.Examscreen"
+    android:id="@+id/fragment_childLayoutb1"
+    android:background="#EFEFEF"
+    android:gravity="left"
+    android:layout_alignParentLeft="true"
+
+    android:clickable="true"
+
+    android:layout_marginBottom="-70dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="1dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/slogo"
+                android:background="#ffffff"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/imageView"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/voucherhidden"
+
+                android:text="@{voucher.VoucherID}"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/voucherhiddenmajor"
+
+                android:text="@{voucher.VoucherID}"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#EE6940"
+                android:textSize="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="0dp"
+                android:text="@string/txt_examscreen"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvexamination" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="-25dp"
+                android:src="@drawable/exam1en"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="320dp"
+                android:id="@+id/exam1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="-58dp"
+                android:text="@string/txt_My_MAjor"
+                android:paddingLeft="10dp"
+                android:textColor="#5C6176"
+                android:textSize="25dp"
+                android:gravity="left"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="120dp"
+                android:id="@+id/textView3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/txt_VNo"
+                android:layout_marginTop="-80dp"
+                android:id="@+id/vouchertext1"
+
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/voucherno1"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="70dp"
+
+                android:text="@{voucher.VoucherNo}"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_voucher"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"
+                android:id="@+id/addvouchr"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-70dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/buttoncorner"
+                android:layout_marginLeft="-70dp"
+                android:layout_height="55dp" />
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_buy"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"
+                android:layout_marginTop="-55dp"
+                android:background="@drawable/buttoncorner"
+                android:layout_gravity="right"
+                android:layout_marginRight="45dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="#ffffff"
+                android:layout_height="55dp"
+                android:id="@+id/btnbuy" />
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_take_exam"
+                android:textSize="18dp"
+                       android:stateListAnimator="@null"
+                android:layout_marginTop="-30dp"
+                android:layout_gravity="right"
+                android:background="@drawable/examscreenbutton"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="40dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_height="55dp"
+                android:id="@+id/btntake1" />
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_report"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:layout_gravity="right"
+                android:stateListAnimator="@null"
+                android:background="#66CB6F"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="-40dp"
+                android:textColor="#ffffff"
+                android:layout_height="55dp"
+                android:id="@+id/btnreport1" />
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="-20dp"
+                android:src="@drawable/exam2"
+
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="320dp"
+                android:id="@+id/exam2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="-55dp"
+                android:text="@string/txt_Career"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+
+                android:textColor="#434963"
+                android:textSize="25dp"
+                android:layout_marginBottom="20dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="130dp"
+                android:id="@+id/tvcareer" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/txt_VNo"
+                android:layout_marginTop="-80dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/vouchertext4"
+                android:textColor="#000000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/voucherno2"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="70dp"
+
+                android:text="@{voucher.VoucherNo}"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_voucher"
+                android:stateListAnimator="@null"
+                android:id="@+id/cradd"
+                android:textSize="20dp"
+                android:background="@drawable/buttoncorner"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:layout_marginTop="-100dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:layout_marginLeft="-70dp"
+                android:layout_height="55dp" />
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_buy"
+
+                android:stateListAnimator="@null"
+                android:layout_gravity="right"
+                android:layout_marginTop="-55dp"
+                android:background="@drawable/buttoncorner"
+                android:layout_marginRight="45dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="#ffffff"
+                android:layout_height="55dp"
+                android:id="@+id/crbuy" />
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_report"
+                android:stateListAnimator="@null"
+                android:layout_marginTop="-85dp"
+                android:background="#66CB6F"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="right"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="20dp"
+                android:layout_height="55dp"
+                android:id="@+id/crreport" />
+
+
+
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_take_exam"
+                android:textSize="18dp"
+                android:layout_marginLeft="280dp"
+                android:stateListAnimator="@null"
+                android:layout_marginTop="-60dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/examscreenbutton"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="40dp"
+
+                android:textColor="#ffffff"
+                android:layout_height="55dp"
+                android:id="@+id/btntakeexam" />
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="-30dp"
+                android:src="@drawable/exam3en"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="320dp"
+                android:id="@+id/exam3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="-59dp"
+                android:text="@string/txt_WhoMI"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+
+                android:textColor="#434963"
+                android:textSize="25dp"
+                android:layout_marginBottom="20dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="120dp"
+                android:id="@+id/tvwhomi" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/txt_VNo"
+                android:layout_marginTop="-90dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                android:id="@+id/vouchertext2"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/voucherno"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="70dp"
+
+                android:text="@{voucher.VoucherNo}"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_voucher"
+                android:textSize="20dp"
+                android:id="@+id/addvouchr3"
+                android:background="@drawable/buttoncorner"
+                android:stateListAnimator="@null"
+                android:textColor="#ffffff"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="-90dp"
+                android:layout_marginLeft="-70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="55dp" />
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_buy"
+                android:layout_gravity="right"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:stateListAnimator="@null"
+                android:background="@drawable/buttoncorner"
+                android:layout_marginBottom="40dp"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginRight="45dp"
+
+                android:layout_height="60dp"
+                android:id="@+id/btnbuy1" />
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_take_exam"
+                android:textSize="18dp"
+                android:stateListAnimator="@null"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/examscreenbutton"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="40dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:textColor="#ffffff"
+                android:layout_height="55dp"
+                android:id="@+id/btntakeexam3" />
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_report"
+
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+
+                android:stateListAnimator="@null"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="-85dp"
+                android:background="#66CB6F"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_height="55dp"
+                android:id="@+id/btnreport3" />
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/exam4"
+               android:layout_marginBottom="-20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="260dp"
+                android:id="@+id/exam4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="-50dp"
+                android:text="@string/txt_My_Mate"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+
+                android:textColor="#434963"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="-50dp"
+                android:layout_height="120dp"
+                android:id="@+id/tvmymate" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/txt_VNo"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/vouchertext3"
+                android:textColor="#000000"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/voucherno4"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="70dp"
+                android:text="@{voucher.VoucherNo}"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_voucher"
+                android:textSize="20dp"
+                android:id="@+id/addvouchr2"
+                android:stateListAnimator="@null"
+                android:background="@drawable/buttoncorner"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="-70dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:layout_height="55dp" />
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_buy"
+                android:textSize="18dp"
+                android:stateListAnimator="@null"
+                android:layout_gravity="right"
+                android:layout_marginTop="-55dp"
+                android:layout_marginRight="45dp"
+
+                android:background="@drawable/buttoncorner"
+                android:layout_marginBottom="40dp"
+                android:textColor="#ffffff"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:layout_height="55dp"
+                android:id="@+id/btnbuy2" />
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:text="@string/btn_take_exam"
+                android:stateListAnimator="@null"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/examscreenbutton"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+             android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:layout_height="55dp"
+                android:id="@+id/btntakeexam2" />
+
+
+            <Button
+                android:layout_width="120dp"
+
+                android:text="@string/btn_report"
+                android:layout_marginLeft="270dp"
+                android:stateListAnimator="@null"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+
+                android:layout_marginTop="-75dp"
+                android:background="#66CB6F"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:layout_height="55dp"
+                android:id="@+id/btnreport" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+</layout>

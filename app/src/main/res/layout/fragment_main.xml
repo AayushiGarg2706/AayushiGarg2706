@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clickable="true"
+
+    tools:context="com.logischtech.mytalentapp.MainActivity$PlaceholderFragment"
+    android:id="@+id/fragment_mainLayout"
+    >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section_label"
+        android:layout_toEndOf="@+id/section_label"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="156dp"
+        android:id="@+id/btnShowChild" />
+
+</FrameLayout>
